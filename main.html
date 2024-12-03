@@ -5,7 +5,27 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
+<style>
 
+.holder {
+  display: grid;
+  width: 200px;
+  height: 200px;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+  grid-template-rows: repeat(2, 1fr);    /* 2 equal rows */
+  gap: 0;  /* No gap between items */
+}
+
+.item {
+  border: 1px solid black;  /* Optional: to visualize the grid items */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+</style>
 <body>
     <div class="holder">
     	<div class="item item-1">1</div>
